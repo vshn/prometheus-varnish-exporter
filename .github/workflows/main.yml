@@ -10,7 +10,7 @@ on:
 
 jobs:
   build_and_push:
-    runs-on: centos
+    runs-on: ubuntu-latest
     steps:
       - name: Check Out Repo
         uses: actions/checkout@v2
@@ -35,7 +35,7 @@ jobs:
           file: ./Dockerfile
 
       - name: Push
-        id: docker_build
+        id: docker_push
         uses: docker/build-push-action@v2
         if: github.ref == 'refs/tags'
         with:
