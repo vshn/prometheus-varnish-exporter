@@ -1,2 +1,2 @@
-# prometheus_varnish_exporter
+# prometheus-varnish-exporter
 This is a prometheus exporter for Varnish
