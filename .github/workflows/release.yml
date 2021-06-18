@@ -25,7 +25,7 @@ jobs:
 
       - name: Set up Docker Buildx
         id: buildx
-        run: docker/setup-buildx-action@v1
+        uses: docker/setup-buildx-action@v1
 
       - name: Build and Push
         id: docker_push
